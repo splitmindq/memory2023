@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;700&display=swap');
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+
+  .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4{
+    position: relative;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("3.jpg");
+    min-height: 50%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("bcg1.jpg");
+    min-height: 400px;
+    
+  }
+  
+  .bgimg-3 {
+    background-image: url("3.jpg");
+    min-height: 540px;
+  }
+
+  .container,.button-container,.button-container-visible,.custom-button-wrapper{
+    visibility: hidden;
+    content: none;
+    size: 0px;
+    width: 0px;
+    display: none;
+  }
+  video{
+    position: absolute;
+    height:400px ;
+    width: 1500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: none;
+  }
+  .img-4{
+    position: absolute;
+    left:34%;
+    top:25%;
+    
+  }
+  .bgimg-4{
+  background-image: url(bcg1.jpg);
+background-image: radial-gradient(0,0,0,0);
+    min-height: 400px;
+    max-height:500px;
+  opacity:0.8;
+   
+  }
+  .caption {
+    position: absolute;
+    top:10%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+}
+*{margin:0;
+  padding:0;}
+  
+  ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+  
+  }
+  
+  li {
+    color: whitesmoke ;
+     font-style: italic;
+      font-size: 20px;
+      list-style: none;
+      position: relative;
+      display: inline-block;
+      font-family: 'Rowdies', cursive;
+  }
+  
+  li::before {
+    
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: orange;
+      border: 0px;
+      scale: .1;
+      transform-origin: left;
+      transition: scale .25s;
+  
+  }
+  li:hover{
+    cursor: pointer;
+  }
+  li:hover::before {
+      scale: 1;
+      
+  }
+.zxc-rem{
+width: 650px;
+position: absolute;
+left:33%;
+}

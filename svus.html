@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="svus.css">
+    <title>Свято-Успенский кафедральный собор</title>
+</head>
+<body>
+    
+
+    <div class="center">
+        <p id="text">Свято-Успенский кафедральный собор</p>
+    </div>
+
+ <script>
+            var text = document.getElementById('text');
+        var newDom = '';
+        var animationDelay = 40;
+
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+
+        text.innerHTML = newDom;
+        var length = text.children.length;
+
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+    
+ </script>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1677694512499!6m8!1m7!1sCAoSLEFGMVFpcE9IclQtTVNrangzYzI2S2lkaGFhU3dlZTU3VnV6NTY2UlhzX0ty!2m2!1d55.196201!2d30.20219789999999!3f333.26278674059057!4f-2.0977000600417597!5f0.7820868581430032" width="100%" height="860px" style="border:0;"></iframe>
+<a href="#main-menu-toggle"
+class="backdrop"
+tabindex="-1"
+aria-hidden="true" hidden></a>
+</header>
+
+<article class="s-2">
+
+<p>Успенский собор, расположенный в белорусском городе Витебске – поистине уникальное культовое сооружение. Первая документально известная постройка, находившаяся здесь более шестисот лет назад, к сожалению, не уцелела. Однако стараниями верующих и небезразличных к историческому наследию людей он был восстановлен по образцу древнего храма. Сейчас Успенский собор привлекает огромное количество туристов, которые зачастую приезжают на экскурсию в Витебск только ради этой святыни.</p>
+
+<p>За время своего долгого существования церковь не раз сгорала и восстанавливалась. Однако не только стихийные бедствия вредили святому месту. Не единожды стены церкви служили стройматериалом для местных жителей: они то разбирали ее, удовлетворяя собственные нужды, то отстраивали заново. Исторические перипетии, рост толерантности и веротерпимости даже  сделали прежде православный храм униатским.
+
+    Переломным для храма стал 1722 год, когда он сгорел окончательно, после чего место пустовало целых двадцать лет.  </p>
+
+
+
+
+
+
+</article>
+
+<div style="position: relative; top: -100px; margin-bottom: -100px; z-index: 1;">
+   <video class="vd-1" autoplay="autoplay" data-inline-media-pause-on-exit="true" preload="auto"  muted  src="Витебск. Свято-Успенский кафедральный собор..mp4" width="800px"></video> 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sofsobr.css">
+    <title>Софийский Собор</title>
+</head>
+<body>
+    
+
+    <div class="center">
+        <p id="text">Софийский Собор</p>
+    </div>
+
+ <script>
+            var text = document.getElementById('text');
+        var newDom = '';
+        var animationDelay = 40;
+
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+
+        text.innerHTML = newDom;
+        var length = text.children.length;
+
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+    
+ </script>
+<iframe class="ifr" src="https://www.google.com/maps/embed?pb=!4v1677690480808!6m8!1m7!1sCAoSLEFGMVFpcFBBeWpLUkxSbnR4a00wS1ZvVHZEaDJPbmpQR0lQZURFdGdNV0lh!2m2!1d55.4860781!2d28.7585739!3f5.90378657300063!4f-16.7410581418918!5f0.7820868581430032" width="100%" height="860px" style="border:0;"></iframe>
+
+<a href="#main-menu-toggle"
+class="backdrop"
+tabindex="-1"
+aria-hidden="true" hidden></a>
+</header>
+
+<article class="s-2">
+
+<p>Софийский собор в древнем Полоцке – уникальный храм среди немногих одноименных православных святынь Европы, один из самых ранних в Древней Руси и первый каменный на территории Беларуси.</p>
+
+<p>Этот старинный памятник представлен в предварительный Список всемирного наследия ЮНЕСКО. </p>
+
+<p>Собор Софии Премудрости Божией с поистине особенной и символичной архитектурой был построен в Полоцке на правом берегу Западной Двины в ХI веке. В середине XVIII-го его основательно перестроили по проекту архитектора Яна Глаубица в стиле виленского (позднебелорусского) барокко.</p>
+
+
+
+
+</article>
+
+<div style="position: relative; top: -100px; margin-bottom: -100px; z-index: 1;">
+   <video class="vd-1" autoplay="autoplay" data-inline-media-pause-on-exit="true" preload="auto"  muted  src="Софийский собор в Полоцке зимой.mp4" width="800px"></video> 
+</div>
+
+</body>
+</html>

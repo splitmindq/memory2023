@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Здесь настрой стили, как нрав тебе */
+
+table {
+    border: 1px solid #F2F3F7;
+    position: absolute;
+    top:10%;
+    left:25%;
+    padding: 0;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+td {
+    height: 300px;
+    width: 300px;
+    border: 5px solid #F2F3F7;
+    ;
+    margin: 0 0;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 18px;
+    ;
+    border-color: black;
+}
+
+img {
+    max-width: 100%;
+    height: 260px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#back {
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top:85%;
+    left:40%;
+}
+a {
+    text-decoration: none;
+    font-family: 'Rowdies', cursive;  
+    
+}
+
+

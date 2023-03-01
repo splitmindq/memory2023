@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unesk.css">
+    <title>Памятник букве «Ў»</title>
+</head>
+<body>
+    
+
+    <div class="center">
+        <p id="text">Памятник букве «Ў»</p>
+    </div>
+
+ <script>
+            var text = document.getElementById('text');
+        var newDom = '';
+        var animationDelay = 40;
+
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+
+        text.innerHTML = newDom;
+        var length = text.children.length;
+
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+    
+ </script>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1677693174642!6m8!1m7!1sCAoSLEFGMVFpcFBCdWFxRmJMNjEwRjRCYUFsRXFYUUJwRjh1TGJuQ2szWUFEM2Vx!2m2!1d55.48510354422121!2d28.77073176205158!3f241.6179!4f-15.326250000000002!5f0.7820868581430032" width="100%" height="860px" style="border:0;"></iframe>
+<a href="#main-menu-toggle"
+class="backdrop"
+tabindex="-1"
+aria-hidden="true" hidden></a>
+</header>
+
+<article class="s-2">
+
+<p>Памятник букве «Ў» в Полоцке является абсолютно уникальным и весьма необычным. Он единственный в своём роде. И тому есть логическое объяснение. Ведь кроме белорусского языка больше ни в одном языке мира не встречается буква «ў» («у нескладовае», по-русски – «у неслоговое»). «Ў» - это эксклюзивный символ белорусского языка.</p>
+
+<p>Памятник букве «Ў» в Полоцке хоть и посвящен отдельной букве белорусского алфавита, но по сути является памятником культурному своеобразию всего белорусского народа. </p>
+
+<p>Установлен памятник букве «Ў» в Полоцке 3 сентября 2003 года, во время десятого празднования «Дня белорусской письменности»</p>
+
+
+
+
+</article>
+
+<img class="unesk" src="polotsk_u_pomnik_0001-76be5199369142b9086a5bb6ebf19354-orig.jpg"/>
+</body>
+</html>

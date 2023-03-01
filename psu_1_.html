@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="psu.css">
+    <title>psu</title>
+</head>
+<body>
+    
+
+    <div class="center">
+        <p id="text">Художественная галерея города Полоцка</p>
+    </div>
+
+ <script>
+            var text = document.getElementById('text');
+        var newDom = '';
+        var animationDelay = 40;
+
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+
+        text.innerHTML = newDom;
+        var length = text.children.length;
+
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+    
+ </script>
+    <iframe class="ifr" src="https://www.google.com/maps/embed?pb=!4v1676721093970!6m8!1m7!1sCAoSLEFGMVFpcFBwUjB5TjhsQjNBTzlRUmdtWFctbFpiQTRVZ2Vwek5XdnVYRE9j!2m2!1d55.485817!2d28.7647781!3f15.835237514061646!4f-11.113017665145279!5f0.6436007471097774"  width="100%" height="860px" style="border:0; position: relative; "></iframe>
+
+
+    <a href="#main-menu-toggle"
+class="backdrop"
+tabindex="-1"
+aria-hidden="true" hidden></a>
+</header>
+
+<article class="s-2">
+
+<p>Художественная галерея находится в здании одного из корпусов бывшего иезуитского коллегиума, памятника архитектуры XVIII века. Общая площадь музея составляет 1000 кв.м.Уникальная экспозиция галереи знакомит с историей города и всей Беларуси через произведения искусства, как культового,так и светского характера.</p>
+
+<p>В экспозиции галереи представлены коллекции иконописи и портретной живописи XVIII–XX вв., изобразительного искусства Беларуси ХХ века и, не имеющая аналогов в мире, стационарная выставка «Стенопись XII–XIX веков Спасо-Преображенского храма в Полоцке», которая знакомит с росписями Спасской церкви, сохранившимися и дошедшими до нас через девять веков. </p>
+
+<p>Художественная галерея располагает двумя выставочными залами, гравёрной мастерской и художественным салоном</p>
+
+
+
+
+</article>
+
+<div>
+   <video class="vd-1" autoplay="autoplay" data-inline-media-pause-on-exit="true" preload="auto"  muted  src="videoplayback1.mp4" width="800px"></video> 
+</div>
+
+</body>
+</html>

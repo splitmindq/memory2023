@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="amf.css">
+    <title>Спасо-Евфросиниевский монастырь</title>
+</head>
+<body>
+    
+
+    <div class="center">
+        <p id="text">Спасо-Евфросиниевский монастырь</p>
+    </div>
+
+ <script>
+            var text = document.getElementById('text');
+        var newDom = '';
+        var animationDelay = 40;
+
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+
+        text.innerHTML = newDom;
+        var length = text.children.length;
+
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+    
+ </script>
+ <iframe src="https://www.google.com/maps/embed?pb=!4v1677695555330!6m8!1m7!1sCAoSLEFGMVFpcE9uY0EtN3JrQXR2Ykp3cFdiS1BTc09RWC1vaEYtdlVlbEZid1Z0!2m2!1d55.50405388561999!2d28.78065594246675!3f357.61362!4f2.7599639999999965!5f0.7820868581430032" width="100%" height="860px" style="border:0;"></iframe>
+ 
+ <a href="#main-menu-toggle"
+class="backdrop"
+tabindex="-1"
+aria-hidden="true" hidden></a>
+</header>
+
+<article class="s-2">
+
+<p>Спасо-Евфросиниевский храм является очень ценной постройкой для Беларуси, так как он единственный среди полоцких древних монастырей, который сохранился до нашего времени. Он является самым крупным центром православия на всей территории страны.
+
+    Монастырь был основан в 1125 году княжной Евфросинией, в честь которой и получил свое современное название. Изначально храм представлял собой небольшую постройку из дерева. Но с течением времени количество молодых монахинь росло, и этой деревянной постройки стало мало. Появилась острая необходимость возвести новый монастырь большего размера. Появившееся в результате здание было построено из камня ровно за 30 недель благодаря зодчему Иоанну.</p>
+
+<p>На протяжении 45 лет Ефросиния жила при монастыре. За этот период храм стал основным местом просвещения земли Полоцкой. В те времена была очень большая библиотека при монастыре и активно работала мастерская по написанию икон, а также небольшая приходская школа. </p>
+
+
+
+
+
+</article>
+
+<div style="position: relative; top: -100px; margin-bottom: -100px; z-index: 1;">
+    <video class="vd-1" autoplay="autoplay" data-inline-media-pause-on-exit="true" preload="auto"  muted  src="Спасо-Евфросиниевский монастырь в Полоцке _ Женская обитель БПЦ.mp4" width="800px"></video> 
+ </div>
+</body>
+</html>
